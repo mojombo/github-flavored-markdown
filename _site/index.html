@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <title>GitHub Flavored Markdown - Introduction</title>
+    <link href="http://github.com/stylesheets/screen.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/screen.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="main">
+      <div id="header" class="basic">
+
+        <div class="site">
+          <div class="logo">
+            <a href="/"><img src="http://github.com/images/modules/header/logo_gfm.png" alt="github pages" /></a>
+          </div>
+          <div class="actions">
+            <a href="http://github.com">home</a>
+            <a href="http://github.com/login">login</a>
+            <a href="http://github.com/signup">signup!</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="content" class="site">
+        <div class="wikistyle">
+
+          <h1>GitHub Flavored Markdown</h1>
+
+<p>GitHub is transitioning to what we're calling "GitHub Flavored Markdown" (GFM) for messages, issues, and comments. It differs from standard Markdown (SM)
+in a few significant ways and adds some additional functionality.</p>
+
+<p>If you're not already familiar with Markdown, you should spend 15 minutes and go over the excellent <a href="http://daringfireball.net/projects/markdown/syntax">Markdown Syntax Guide</a> at Daring Fireball.</p>
+
+<p>If you prefer to learn by example, see the following source and result:</p>
+
+<ul>
+<li><a href="http://tom.preston-werner.com/github-flavored-markdown/sample_content.gfm">Source</a></li>
+<li><a href="http://github.com/mojombo/github-flavored-markdown/issues/#issue/1">Result</a></li>
+</ul>
+
+
+<h2>Differences from traditional Markdown</h2>
+
+<h3>Newlines</h3>
+
+<p>The biggest difference that GFM introduces is in the handling of linebreaks. With SM you can hard wrap paragraphs of text and they will be combined into a single paragraph. We find this to be the cause of a huge number of unintentional formatting errors. GFM treats newlines in paragraph-like content as real line breaks, which is probably what you intended.</p>
+
+<p>The next paragraph contains two phrases separated by a single newline character:</p>
+
+<pre><code>Roses are red
+Violets are blue
+</code></pre>
+
+<p>becomes</p>
+
+<p>Roses are red<br/>
+Violets are blue</p>
+
+<h3>Multiple underscores in words</h3>
+
+<p>It is not reasonable to italicize just <em>part</em> of a word, especially when you're dealing with code and names often appear with multiple underscores. Therefor, GFM ignores multiple underscore in words.</p>
+
+<pre><code>perform_complicated_task
+do_this_and_do_that_and_another_thing
+</code></pre>
+
+<p>becomes</p>
+
+<p>perform_complicated_task<br/>
+do_this_and_do_that_and_another_thing</p>
+
+<h2>A bit of the GitHub spice</h2>
+
+<p>In addition to the changes in the previous section, certain references are auto-linked:</p>
+
+<ul>
+<li>SHA: be6a8cc1c1ecfe9489fb51e4869af15a13fc2cd2</li>
+<li>User@SHA ref: mojombo@be6a8cc1c1ecfe9489fb51e4869af15a13fc2cd2</li>
+<li>User/Project@SHA: mojombo/god@be6a8cc1c1ecfe9489fb51e4869af15a13fc2cd2</li>
+<li>#Num: #1</li>
+<li>User/#Num: mojombo#1</li>
+<li>User/Project#Num: mojombo/god#1</li>
+</ul>
+
+
+
+        </div>
+      </div>
+
+      <div class="push"></div>
+    </div>
+
+    <div id="footer">
+      <div class="site">
+
+        <div class="info">
+          <div class="links">
+            <a href="http://github.com/blog/148-github-shirts-now-available">T-Shirts</a> |
+            <a href="http://github.com/blog">Blog</a> |
+            <a href="http://support.github.com/">Support</a> |
+            <a href="http://github.com/training">Git Training</a> |
+            <a href="http://github.com/contact">Contact</a> |
+            <a href="http://groups.google.com/group/github/">Google Group</a> |
+            <a href="http://github.wordpress.com">Status</a>
+          </div>
+          <div class="company">
+            GitHub is <a href="http://logicalawesome.com/">Logical Awesome</a> &copy;2009 | <a href="http://github.com/site/terms">Terms of Service</a> | <a href="http://github.com/site/privacy">Privacy Policy</a>
+          </div>
+        </div>
+        <div class="sponsor">
+          <a href="http://engineyard.com"><img src="http://github.com/images/modules/footer/engine_yard_logo.png" alt="Engine Yard" /></a>
+          <div>
+            Hosting provided by our<br /> partners at Engine Yard
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    var pageTracker = _gat._getTracker("UA-3769691-2");
+    pageTracker._initData();
+    pageTracker._trackPageview();
+    </script>
+
+  </body>
+</html>
