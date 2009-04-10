@@ -1,42 +1,19 @@
----
----
-
 GitHub Flavored Markdown
-========================
+================================
 
-GitHub is transitioning to what we're calling "GitHub Flavored Markdown" (GFM) for messages, issues, and comments. It differs from standard Markdown (SM)
-in a few significant ways and adds some additional functionality.
+*View the [source of this content]().*
 
-If you're not already familiar with Markdown, you should spend 15 minutes and go over the excellent [Markdown Syntax Guide](http://daringfireball.net/projects/markdown/syntax) at Daring Fireball.
+Let's get the whole "linebreak" thing out of the way. The next paragraph contains two phrases separated by a single newline character:
 
-Differences from traditional Markdown
--------------------------------------
+Roses are red
+Violets are blue
 
-### Newlines
-
-The biggest difference that GFM introduces is in the handling of linebreaks. With SM you can hard wrap paragraphs of text and they will be combined into a single paragraph. We find this to be the cause of a huge number of unintentional formatting errors. GFM treats newlines in paragraph-like content as real line breaks, which is probably what you intended.
-
-The next paragraph contains two phrases separated by a single newline character:
-
-    Roses are red
-    Violets are blue
-
-becomes
+The next paragraph has the same phrases, but now they are separated by two spaces and a newline character:
 
 Roses are red  
 Violets are blue
 
-### Multiple underscores in words
-
-It is not reasonable to italicize just _part_ of a word, especially when you're dealing with code and names often appear with multiple underscores. Therefor, GFM ignores multiple underscore in words.
-
-    perform_complicated_task
-    do_this_and_do_that_and_another_thing
-
-becomes
-
-perform\_complicated\_task  
-do\_this\_and\_do\_that\_and\_another\_thing
+Oh, and one thing I cannot stand is the mangling of words with multiple underscores in them like perform_complicated_task or do_this_and_do_that_and_another_thing.
 
 A bit of the GitHub spice
 -------------------------
