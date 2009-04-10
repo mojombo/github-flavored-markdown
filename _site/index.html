@@ -37,7 +37,7 @@ in a few significant ways and adds some additional functionality.</p>
 <p>If you prefer to learn by example, see the following source and result:</p>
 
 <ul>
-<li><a href="http://tom.preston-werner.com/github-flavored-markdown/sample_content.gfm">Source</a></li>
+<li><a href="sample_content.html">Source</a></li>
 <li><a href="http://github.com/mojombo/github-flavored-markdown/issues/#issue/1">Result</a></li>
 </ul>
 
@@ -61,7 +61,7 @@ Violets are blue</p>
 
 <h3>Multiple underscores in words</h3>
 
-<p>It is not reasonable to italicize just <em>part</em> of a word, especially when you're dealing with code and names often appear with multiple underscores. Therefor, GFM ignores multiple underscore in words.</p>
+<p>It is not reasonable to italicize just <em>part</em> of a word, especially when you're dealing with code and names often appear with multiple underscores. Therefore, GFM ignores multiple underscores in words.</p>
 
 <pre><code>perform_complicated_task
 do_this_and_do_that_and_another_thing
@@ -76,13 +76,23 @@ do_this_and_do_that_and_another_thing</p>
 
 <p>In addition to the changes in the previous section, certain references are auto-linked:</p>
 
+<pre><code>* SHA: be6a8cc1c1ecfe9489fb51e4869af15a13fc2cd2
+* User@SHA ref: mojombo@be6a8cc1c1ecfe9489fb51e4869af15a13fc2cd2
+* User/Project@SHA: mojombo/god@be6a8cc1c1ecfe9489fb51e4869af15a13fc2cd2
+* \#Num: #1
+* User/#Num: mojombo#1
+* User/Project#Num: mojombo/god#1
+</code></pre>
+
+<p>becomes</p>
+
 <ul>
-<li>SHA: be6a8cc1c1ecfe9489fb51e4869af15a13fc2cd2</li>
-<li>User@SHA ref: mojombo@be6a8cc1c1ecfe9489fb51e4869af15a13fc2cd2</li>
-<li>User/Project@SHA: mojombo/god@be6a8cc1c1ecfe9489fb51e4869af15a13fc2cd2</li>
-<li>#Num: #1</li>
-<li>User/#Num: mojombo#1</li>
-<li>User/Project#Num: mojombo/god#1</li>
+<li>SHA: <a href="/mojombo/github-flavored-markdown/commit/be6a8cc1c1ecfe9489fb51e4869af15a13fc2cd2">be6a8cc</a></li>
+<li>User@SHA ref: <a href="/mojombo/github-flavored-markdown/commit/be6a8cc1c1ecfe9489fb51e4869af15a13fc2cd2">mojombo@be6a8cc</a></li>
+<li>User/Project@SHA: <a href="/mojombo/god/commit/be6a8cc1c1ecfe9489fb51e4869af15a13fc2cd2">mojombo/god@be6a8cc</a></li>
+<li>#Num: <a href="/mojombo/github-flavored-markdown/issues/#issue/1" class="internal">#1</a></li>
+<li>User/#Num: <a href="/mojombo/github-flavored-markdown/issues/#issue/1">mojombo#1</a></li>
+<li>User/Project#Num: <a href="/mojombo/god/issues/#issue/1">mojombo/god#1</a></li>
 </ul>
 
 
